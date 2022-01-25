@@ -23,6 +23,32 @@
 
 </head>
 
+<!-- Some Script for page -->
+<script>
+    function change_img(a) {
+        if (a == 1) {
+            document.getElementById('skill-block-img1').src = "./img/CSS-GIF.gif"
+        } else if (a == 2) {
+            document.getElementById('skill-block-img2').src = "./img/Videography-GIF.gif"
+        } else if (a == 3) {
+            document.getElementById('skill-block-img3').src = "./img/Illustration-GIF.gif"
+        } else if (a == 4) {
+            document.getElementById('skill-block-img4').src = "./img/Builder-GIF.gif"
+        }
+    }
+    function ori(a) {
+        if (a == 1) {
+            document.getElementById('skill-block-img1').src = "./img/CSS-Icon.jpg"
+        } else if (a == 2) {
+            document.getElementById('skill-block-img2').src = "./img/Videography-Icon.jpg"
+        } else if (a == 3) {
+            document.getElementById('skill-block-img3').src = "./img/Illustration-Icon.jpg"
+        } else if (a == 4) {
+            document.getElementById('skill-block-img4').src = "./img/Builder-Icon.jpg"
+        }
+    }
+</script>
+
 <body>
     <main>
         <!-- Navigation Bar -->
@@ -61,11 +87,12 @@
         <!-- About Section of Page (Section 2)-->
         <section class="about" id="about">
             <div class="about-img">
-                <img src="img/Floating-Objects.png" class="img-fluid anime" width="400px">
+                <img src="img/Floating-Objects.png" class="img-fluid anime" width="450px">
             </div>
             <div class="about-dec">
                 <h2>Hi! My name is <span class="ab-color">Lebon Siu.</span><br>
-                    I'm a <span class="ab-color">graphic designer</span> based in <span class="ab-color">Vancouver.</span></h2>
+                    I'm a <span class="ab-color">graphic designer</span> based in <span
+                        class="ab-color">Vancouver.</span></h2>
                 <p>I design high-concept digital experiences for businesses, and bring a unique perspective to design
                     through my background in film and video. I have had the privelage to work with clients such as
                     Fairmont, BC Liquor, Vancouver is Awesome, and more.</p>
@@ -82,6 +109,62 @@
 
         <hr class="dividor">
 
+        <!-- Skills section of page (section 3) -->
+        <section class="skill" id="skill">
+            <h3>Skills</h3>
+            <div class="s-block">
+                <div class="skill-block" onmouseover="change_img(1)" onmouseleave="ori(1)">
+                    <img src="./img/CSS-Icon.jpg" class="skill-block-img img-fluid" id="skill-block-img1">
+                    <div class="skill-block-decs">
+                        <h3>HTML/CSS</h3>
+                        <p>
+                            With over four years of experience in front-end design, I use HTML/CSS to bring your
+                            businesses
+                            personality to the forefront, creating highly customized and immersive web experiences.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="skill-block" onmouseover="change_img(2)" onmouseleave="ori(2)">
+                    <img src="./img/Videography-Icon.jpg" class="skill-block-img img-fluid" id="skill-block-img2">
+                    <div class="skill-block-decs">
+                        <h3>
+                            Editing & Motion Graphics</h3>
+                        <p>
+                            My background in videography means I'm proficient in video editing softwares such as Adobe
+                            Premiere, Adobe After Effects, and Final Cut Pro. On my free time, you'll find me brushing
+                            up on
+                            my motion graphic skills.
+                        </p>
+                    </div>
+                </div>
+                <div class="skill-block"  onmouseover="change_img(3)" onmouseleave="ori(3)">
+                    <img src="./img/Illustration-Icon.jpg" class="skill-block-img img-fluid" id="skill-block-img3">
+                    <div class="skill-block-decs">
+                        <h3>Illustration</h3>
+                        <p>
+                            I am well-versed in all Adobe softwares such as XD, Photoshop and Illustrator, and often
+                            find
+                            myself combining my illustration skills with design.
+                        </p>
+                    </div>
+                </div>
+                <div class="skill-block"  onmouseover="change_img(4)" onmouseleave="ori(4)">
+                    <img src="./img/Builder-Icon.jpg" class="skill-block-img img-fluid" id="skill-block-img4">
+                    <div class="skill-block-decs">
+                        <h3>
+                            Visual Builders & Platforms</h3>
+                        <p>
+                            I am a quick learner when it comes to learning new platforms. I have experience in online
+                            visual
+                            builders such as Shopify, Unbounce, Ceros, WordPress, and Flexitive. I'm also currently
+                            learning
+                            webflow.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 </body>
