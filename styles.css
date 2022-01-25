@@ -7,13 +7,14 @@ html{
     font-size: 62.5%;
 }
 
-/* Heading/Banner CSS */
+/* Heading/Banner (section 1) CSS */
 #head{
     background: url(./img/bgimg.jpg);
 }
 .txt{
+    font-family: 'Ibarra Real Nova',serif;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
 }
 .txt-co{
     color: #0586ca;
@@ -22,3 +23,63 @@ html{
 a{
     text-decoration: none;
 }
+
+/* About Section (section 2) CSS */
+.about{
+    display: flex;
+    justify-content: center;
+    padding: 10rem 0 5rem 0;
+    gap: 9rem;
+}
+.about-img{
+    background: url('./img/Rabbithole-Typography.svg');
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.anime{
+    position: absolute;
+    animation-name: updown;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    /* animation: updown 2s linear 0 infinite; */
+}
+@keyframes updown {
+    0%{
+        top:0;
+    }
+    50%{
+        top: 2rem;
+    }
+    100%{
+        top:0;
+    }
+}
+.about-dec{
+    width: 70rem;
+    font-family: 'Ibarra Real Nova',serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.about-dec h2{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.about-dec p{
+    font-size: 1.7rem;
+}
+.ab-color{
+    color: #0586ca;
+}
+
+.dividor{
+    width: 63%;
+    margin: auto;
+    border-top: 2px dotted rgb(143, 143, 143);
+}
+
+/* Skills (Section 3) CSS */
