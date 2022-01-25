@@ -5,6 +5,28 @@
 }
 html{
     font-size: 62.5%;
+    
+}
+
+/* Navigation bar CSS */
+/* nav{
+    position: absolute;
+    width: 100%;
+    height: 3rem;
+    background-color: blue;
+}
+.show-sr{
+    top:-70px;
+    opacity:0;
+} */
+
+/* Water Mark CSS */
+.water-mark{
+    position: absolute;
+    position: fixed;
+    bottom: 30px;
+    right: 25px;
+    z-index: 999;
 }
 
 /* Heading/Banner (section 1) CSS */
@@ -40,7 +62,7 @@ a{
     background-repeat: no-repeat;
 }
 .anime{
-    position: absolute;
+    /* position: absolute; */
     animation-name: updown;
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
@@ -49,13 +71,16 @@ a{
 }
 @keyframes updown {
     0%{
-        top:0;
+        
+        transform: translateY(0px);
     }
     50%{
-        top: 2rem;
+        
+        transform: translateY(25px);
     }
     100%{
-        top:0;
+        
+        transform: translateY(0px);
     }
 }
 .about-dec{
@@ -64,6 +89,7 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    text-align: initial;
 }
 .about-dec h2{
     font-size: 3.5rem;
@@ -71,6 +97,7 @@ a{
 }
 .about-dec p{
     font-size: 2rem;
+    color: rgb(105, 105, 105);
 }
 .ab-color{
     color: #0586ca;
@@ -113,9 +140,65 @@ a{
 }
 .skill-block h3{
     font-size: 2.5rem;
+    font-family: 'Ibarra Real Nova',serif;
     font-weight: 1px !important;
 }
 .skill-block p{
-    font-size: 1.8rem;
+    font-size: 2rem;
+    font-family: 'Ibarra Real Nova',serif;
     margin-top: 2rem;
+    color: rgb(105, 105, 105);
+}
+.skill a{
+    text-decoration: underline;
+}
+
+/* Portfolio (section 4) CSS */
+#portfolio{
+    background: url(./img/bgimg.jpg);
+}
+.align-cen{
+    text-align: center;
+}
+#portfolio h3{
+    padding-top: 6rem;
+    font-size: 3.5rem;
+    font-family: 'Ibarra Real Nova',serif;
+    font-weight: bolder;
+}
+.porttext{
+    font-size: 2rem;
+    font-family: 'Ibarra Real Nova',serif;
+    padding-top: 1.5rem;
+    color: rgb(105, 105, 105);
+    margin-bottom: 3rem;
+}
+
+/* Footer (section 5) CSS */
+#footer{
+    background-color: #383933;
+    color: white;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+#footer a{
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+}
+
+/* Some Media Queries in CSS */
+@media (max-width:980px) {
+    html{
+        font-size: 50%;
+    }
+    .about{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: justify;
+    }
+    .water-mark{
+        display: none;
+    }
+
 }

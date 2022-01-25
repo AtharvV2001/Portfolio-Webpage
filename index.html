@@ -5,7 +5,7 @@
     <!-- Importane Meta tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=4.0">
 
     <!-- Title of page -->
     <title>Porfolio Web-Page</title>
@@ -47,9 +47,29 @@
             document.getElementById('skill-block-img4').src = "./img/Builder-Icon.jpg"
         }
     }
+    function rot(a) {
+        if (a == 1) {
+            document.getElementById('fimg1').style.transform = "rotate(-10deg)"
+        } else if (a == 2) {
+            document.getElementById('fimg2').style.transform = "rotate(-10deg)"
+        } else if (a == 3) {
+            document.getElementById('fimg3').style.transform = "rotate(-10deg)"
+        }
+    }
+    function anitrot(a) {
+        if (a == 1) {
+            document.getElementById('fimg1').style.transform = "rotate(0deg)"
+        } else if (a == 2) {
+            document.getElementById('fimg2').style.transform = "rotate(0deg)"
+        } else if (a == 3) {
+            document.getElementById('fimg3').style.transform = "rotate(0deg)"
+        }
+    }
 </script>
 
 <body>
+    <!-- Water Mark Image -->
+    <img src="img/Featured-Button.png" class="water-mark" width="100px">
     <main>
         <!-- Navigation Bar -->
         <nav>
@@ -68,19 +88,21 @@
                         width="1050px">
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    <img src="./img/Burrowing-Rabbit.png" alt="Rabbit looking in a hole" class="img-fluid"
-                        width="200px">
+            <a href="#about">
+                <div class="row">
+                    <div class="col">
+                        <img src="./img/Burrowing-Rabbit.png" alt="Rabbit looking in a hole" class="img-fluid"
+                            width="200px">
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <a href="#about">
+                <div class="row">
+
                     <div class="col">
                         <span class="txt-co">Enter the Rabbit Hole<br>↓</span>
                     </div>
-                </a>
-            </div>
+
+                </div>
+            </a>
         </section>
         <!-- End of Section 1 -->
 
@@ -134,22 +156,22 @@
                             My background in videography means I'm proficient in video editing softwares such as Adobe
                             Premiere, Adobe After Effects, and Final Cut Pro. On my free time, you'll find me brushing
                             up on
-                            my motion graphic skills.
+                            my <a href="#">motion graphic skills.</a>
                         </p>
                     </div>
                 </div>
-                <div class="skill-block"  onmouseover="change_img(3)" onmouseleave="ori(3)">
+                <div class="skill-block" onmouseover="change_img(3)" onmouseleave="ori(3)">
                     <img src="./img/Illustration-Icon.jpg" class="skill-block-img img-fluid" id="skill-block-img3">
                     <div class="skill-block-decs">
                         <h3>Illustration</h3>
                         <p>
                             I am well-versed in all Adobe softwares such as XD, Photoshop and Illustrator, and often
                             find
-                            myself combining my illustration skills with design.
+                            myself combining my <a href="#">illustration skills</a> with design.
                         </p>
                     </div>
                 </div>
-                <div class="skill-block"  onmouseover="change_img(4)" onmouseleave="ori(4)">
+                <div class="skill-block" onmouseover="change_img(4)" onmouseleave="ori(4)">
                     <img src="./img/Builder-Icon.jpg" class="skill-block-img img-fluid" id="skill-block-img4">
                     <div class="skill-block-decs">
                         <h3>
@@ -165,6 +187,97 @@
                 </div>
             </div>
         </section>
+        <!-- End of Section 3 -->
+
+        <!-- Portfolio section of page (Section 4) -->
+        <section id="portfolio" class="container-fluid align-cen">
+            <div class="row">
+                <div class="col my-7">
+                    <h3>Portfolio</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col porttext">My design experience ranges from web design, branding, video, and more.
+                    <br>Take a more in-depth look at some of my favorite work.
+                </div>
+            </div>
+            <div class="container">
+            <div class="row row-cols-1 row-cols-md-3">
+                <div class="col">
+                    
+                </div>
+            </div></div>
+        </section>
+        <!-- End of section 4 -->
+
+        <!-- Footer Section of page (section 5) -->
+        <section id="footer">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 my-5">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col fs-1 fw-bold" style="z-index: 2;">
+                                You can't leave a tea party <br>without a cup of tea, you know?
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col" style="position: relative;">
+                                <img src="./img/Floating-Teacups.jpg" alt="Floating-Teacups" class="img-fluid anime"
+                                    width="400px" style="z-index: -1;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col fs-3">
+                        <div class="row">
+                            <div class="col" style="z-index: 2;">
+                                Leaving so soon? I feel like we've barely scratched the surface! I haven't had a chance
+                                to tell you about my smokey bear obsession, my love for poutine, or my bad genre film
+                                collection!
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                If you have a project for me or simply want to get to know me better, why don't you
+                                invite me out for a cup of tea?
+                            </div>
+                        </div>
+                        <div class="row row-cols-2 align-items-center" onmouseover="rot(1)" onmouseleave="anitrot(1)">
+                            <div class="col-auto">
+                                <img src="./img/Email-Key.jpg" alt="Email-Key" id="fimg1" class="img-fluid"
+                                    width="100px">
+                            </div>
+                            <div class="col">
+                                <a href="mailto:hello@lebonsiu.com">hello@lebonsiu.com</a>
+                            </div>
+                        </div>
+                        <div class="row row-cols-2 align-items-center" onmouseover="rot(2)" onmouseleave="anitrot(2)">
+                            <div class="col-auto">
+                                <img src="./img/LinkedIn-Key.jpg" alt="LinkedIn-Key" id="fimg2" class="img-fluid"
+                                    width="100px">
+                            </div>
+                            <div class="col">
+                                <a href="https://www.linkedin.com/in/lebon-siu/">LinkedIn</a>
+                            </div>
+                        </div>
+                        <div class="row row-cols-2 align-items-center" onmouseover="rot(3)" onmouseleave="anitrot(3)">
+                            <div class="col-auto">
+                                <img src="./img/BH-Key.jpg" alt="Behance-Key" id="fimg3" class="img-fluid"
+                                    width="100px">
+                            </div>
+                            <div class="col">
+                                <a href="https://www.behance.net/lebon-siu">Behance</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col fs-3 text-center">
+                        Copyright ©2022 Lebon Siu. <a href="#head">Back to Top ↑</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of section 5 -->
 
     </main>
 </body>
