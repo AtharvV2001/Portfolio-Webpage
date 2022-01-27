@@ -173,6 +173,26 @@ a{
     color: rgb(105, 105, 105);
     margin-bottom: 3rem;
 }
+.bgcolor{
+    background-color: white;
+}
+.tag{
+    background-color: rgb(224, 224, 224);
+    font-size: 1.4rem;
+    color: #526D83;
+    font-family: 'Ibarra Real Nova',serif;
+    border-radius: 3rem;
+    padding: 0.5rem 1.2rem;
+}
+.title{
+    font-size: 1.9rem;
+    font-family: 'Ibarra Real Nova',serif;
+    font-weight: bold;
+}
+.decs{
+    font-size: 1.5rem;
+    font-family: 'Ibarra Real Nova',serif;
+}
 
 /* Footer (section 5) CSS */
 #footer{
@@ -186,6 +206,7 @@ a{
     color: white;
     font-weight: bold;
 }
+
 
 /* Some Media Queries in CSS */
 @media (max-width:980px) {
