@@ -65,6 +65,20 @@
             document.getElementById('fimg3').style.transform = "rotate(0deg)"
         }
     }
+    window.onload(function(){
+        mainNav();
+        window.onscroll(function() {
+            mainNav();
+        });
+    });
+    function mainNav() {
+            var top=document.body.scrollTop;
+            if (top > 40) {
+                document.getElementById('nav-bar').style.opacity = 1;
+            } else {
+                document.getElementById('nav-bar').style.opacity = 0.2;
+            }
+        }
 </script>
 
 <body>
@@ -72,8 +86,11 @@
     <img src="img/Featured-Button.png" class="water-mark" width="100px">
     <main>
         <!-- Navigation Bar -->
-        <nav>
-
+        <nav id="nav-bar">
+            <a href="#about">About</a>
+            <a href="#skill">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
         </nav>
         <!-- End of Navigation Bar -->
 
@@ -156,7 +173,7 @@
                             My background in videography means I'm proficient in video editing softwares such as Adobe
                             Premiere, Adobe After Effects, and Final Cut Pro. On my free time, you'll find me brushing
                             up on
-                            my <a href="#">motion graphic skills.</a>
+                            my <a href="#link2">motion graphic skills.</a>
                         </p>
                     </div>
                 </div>
@@ -167,7 +184,7 @@
                         <p>
                             I am well-versed in all Adobe softwares such as XD, Photoshop and Illustrator, and often
                             find
-                            myself combining my <a href="#">illustration skills</a> with design.
+                            myself combining my <a href="#link1">illustration skills</a> with design.
                         </p>
                     </div>
                 </div>
@@ -201,11 +218,11 @@
                     <br>Take a more in-depth look at some of my favorite work.
                 </div>
             </div>
-            <div class="container" style="max-width: 120rem;">
+            <div class="container" style="max-width: 120rem; padding-bottom: 50px;">
                 <div class="row row-cols-1 row-cols-md-3">
                     <div class="col mt-5">
                         <!-- Card start -->
-                        <div class="container bgcolor">
+                        <div class="container bgcolor" id="link1">
                             <div class="row justify-content-between pt-5 pb-3">
                                 <div class="col-auto">
                                     <img src="./img/spade-up.svg" alt="Spade-Up">
@@ -246,7 +263,7 @@
                     </div>
                     <div class="col mt-5">
                         <!-- Card 2 -->
-                        <div class="container bgcolor marbot">
+                        <div class="container bgcolor martop1">
                             <div class="row justify-content-between pt-5 pb-3">
                                 <div class="col-auto">
                                     <img src="./img/heart-up.svg" alt="Heart-Up">
@@ -285,7 +302,7 @@
                     </div>
                     <div class="col mt-5">
                         <!-- Card 3 -->
-                        <div class="container bgcolor">
+                        <div class="container bgcolor martop2">
                             <div class="row justify-content-between pt-5 pb-3">
                                 <div class="col-auto">
                                     <img src="./img/diamond-up.svg" alt="Diamond-Up">
@@ -324,7 +341,7 @@
                     </div>
                     <div class="col my-5">
                         <!-- Card 4 -->
-                        <div class="container bgcolor">
+                        <div class="container bgcolor martop1-1" id="link2">
                             <div class="row justify-content-between pt-5 pb-3">
                                 <div class="col-auto">
                                     <img src="./img/club-up.svg" alt="Club-Up">
@@ -363,7 +380,7 @@
                     </div>
                     <div class="col my-5">
                         <!-- Card 5 -->
-                        <div class="container bgcolor">
+                        <div class="container bgcolor martop2-2" >
                             <div class="row justify-content-between pt-5 pb-3">
                                 <div class="col-auto">
                                     <img src="./img/spade-up.svg" alt="Spade-Up">
@@ -444,7 +461,7 @@
                     </div>
                     <div class="col mb-5">
                         <!-- Card 7 -->
-                        <div class="container bgcolor">
+                        <div class="container bgcolor martop1-1">
                             <div class="row justify-content-between pt-5 pb-3">
                                 <div class="col-auto">
                                     <img src="./img/diamond-up.svg" alt="diamond-Up">
@@ -483,7 +500,7 @@
                     </div>
                     <div class="col mb-5">
                         <!-- Card 8 -->
-                        <div class="container bgcolor">
+                        <div class="container bgcolor martop2-2">
                             <div class="row justify-content-between pt-5 pb-3">
                                 <div class="col-auto">
                                     <img src="./img/club-up.svg" alt="club-Up">
