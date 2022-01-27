@@ -65,20 +65,12 @@
             document.getElementById('fimg3').style.transform = "rotate(0deg)"
         }
     }
-    window.onload(function(){
-        mainNav();
-        window.onscroll(function() {
-            mainNav();
-        });
-    });
-    function mainNav() {
-            var top=document.body.scrollTop;
-            if (top > 40) {
-                document.getElementById('nav-bar').style.opacity = 1;
-            } else {
-                document.getElementById('nav-bar').style.opacity = 0.2;
-            }
-        }
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) {
+            document.getElementById('nav-bar').style.animationName = "shownav";
+        } else
+            document.getElementById('nav-bar').style.animationName = "hidenav";
+    })
 </script>
 
 <body>
@@ -90,7 +82,7 @@
             <a href="#about">About</a>
             <a href="#skill">Skills</a>
             <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+            <a href="#footer">Contact</a>
         </nav>
         <!-- End of Navigation Bar -->
 
@@ -380,7 +372,7 @@
                     </div>
                     <div class="col my-5">
                         <!-- Card 5 -->
-                        <div class="container bgcolor martop2-2" >
+                        <div class="container bgcolor martop2-2">
                             <div class="row justify-content-between pt-5 pb-3">
                                 <div class="col-auto">
                                     <img src="./img/spade-up.svg" alt="Spade-Up">
