@@ -161,8 +161,9 @@ a{
     padding: 3rem;
 }
 .skill-block img{
-    width: 25%;
+    width: 10rem;
     height: 100%;
+    /* max-width: 10rem; */
 }
 .skill-block h3{
     font-size: 2.5rem !important;
@@ -258,6 +259,7 @@ a{
     }
     .about-img{
         max-width: 100%;
+        margin: 0;
     }
     .water-mark{
         display: none;
@@ -270,6 +272,7 @@ a{
 @media (max-width:1100px) {
     .s-block{
         flex-direction: column;
+        width: 100%;
     }
     .skill-block{
         width: 100%;
